@@ -6,6 +6,7 @@
 }
 header{
    background-color: black;
+   
     height: 16vh;
     display: flex;
     flex-direction:row;
@@ -76,6 +77,8 @@ nav .icono-menu{
     
 
     background-color: rgba(2, 2, 2, 0.98);
+    background: rgb(62,62,62);
+background: linear-gradient(180deg, rgba(62,62,62,1) 1%, rgba(2,3,3,1) 49%, rgba(24,24,24,1) 65%);
 }
 
 nav:hover a {
@@ -131,6 +134,8 @@ nav:hover a:hover{
     height: 5px;
     width: 100%;
     background-color: red;
+    background: rgb(251,0,0);
+background: linear-gradient(4deg, rgba(251,0,0,1) 23%, rgba(217,12,12,1) 52%, rgba(217,12,12,1) 53%, rgba(221,15,8,1) 93%, rgba(228,22,0,1) 100%);
 }
 
 /* inicio main */
@@ -146,19 +151,29 @@ nav:hover a:hover{
 
 }
 .portada__texto{
-    font-size: 0.5rem;
+  
     text-transform:none;
     color: #fff;
-    text-align: center;    
+    text-align: center;  
+    width:50%;
+    margin: auto;
+    font-size: medium;
+    
+
+
 }
 .ofertas-porta{
-    background-color: #9eb7cfa2;
-    width: 75%;
+
+    background: linear-gradient(180deg, rgba(153,142,142,0.8907420983475246) 20%, rgba(122,125,123,0.8626522107070751) 45%);
+    
     margin: auto;
-    border-radius: 2px;
+    border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
    
+   
 }
+
+   
 span{
     color: rgb(76, 247, 71);
 }
@@ -180,6 +195,8 @@ span{
     color: #fff;
 
     background-color: #374757;
+    background: rgb(62,62,62);
+background: linear-gradient(180deg, rgba(62,62,62,1) 1%, rgba(2,3,3,1) 49%, rgba(24,24,24,1) 65%);
 
     padding: 0.8rem;
     border-bottom: solid 3px rgb(214, 200, 200);
@@ -209,6 +226,11 @@ span{
     padding: 0.3rem;
     background-color: rgb(252, 252, 45);
 }
+.box-inicio-promo:hover{
+    transform:scale(1.2);
+    transition-duration: 500ms;
+
+}
 .promo-contactanos{
     text-decoration: none;
     color: rgb(44, 40, 40);
@@ -223,7 +245,8 @@ span{
 footer{
     height:15vh;
     background-color: #696a6b;
-
+    background: rgb(24,24,24);
+    background: linear-gradient(180deg, rgba(24,24,24,1) 5%, rgba(29,34,34,1) 52%, rgba(42,40,40,1) 99%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -245,6 +268,11 @@ footer{
     font-size:1rem;
 
  
+}
+.redes:hover {
+    transform:scale(1.2);
+    transition-duration: 500ms;
+    transition-delay: 0.5s;
 }
 .redes i {
     padding-left: 7px;
@@ -271,28 +299,34 @@ footer{
         justify-content:center;
     
     }
+    .contenedor__titulo{
+        font-size: 0.7rem;
+    }
    
 .portada__texto {
-    font-size: 0.5rem;
+    
     text-transform:none;
     color: #fff;
     text-align: center;   
-    padding: 1rem;
-
+    padding-bottom: 1rem;
+   
 }
 
 .ofertas-porta{
+
     background-color: #9eb7cfa2;
-    height: 1.5rem;
-    width: 75%;
+    width: 100%;
     margin: auto;
     border-radius: 2px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.3rem;
+    
     
    
 }
 span{
     color: rgb(76, 247, 71);
+    font-size: 1rem;
 }
 .box-inicio-promo{
     border-radius: 3px;
@@ -363,12 +397,12 @@ span{
     
     .ofertas-porta{
         background-color: #9eb7cfa2;
-        width:70%;
+        width:90%;
         margin: auto;
         border-radius: 2px;
         font-family: Arial, Helvetica, sans-serif;
         padding: 0.6rem;
-        padding-bottom: 2rem;
+        
        
     }
     span{
@@ -438,7 +472,7 @@ span{
     
 }
 
-@media (min-width:480px){
+@media (min-width:478px){
    
     header{
         background-color: black;
@@ -580,22 +614,24 @@ span{
         
         }
         .portada__texto{
-            font-size: 0.7rem;
+           
             text-transform:none;
             color: #fff;
             text-align: center;    
         }
         .ofertas-porta{
-            background-color: #9eb7cfa2;
-            height: 3rem;
-            width: 70%;
+           
+            
+            width: 100%;
             margin: auto;
             border-radius: 4px;
             font-family: Arial, Helvetica, sans-serif;
+            
            
         }
         span{
             color: rgb(76, 247, 71);
+            font-size: 0.5rem;
         }
         
         .box-inicio{
@@ -716,8 +752,8 @@ span{
     }
     .ofertas-porta{
         background-color: #9eb7cfa2;
-        height: 3rem;
-        width: 70%;
+       
+        width: 80%;
         margin: auto;
         border-radius: 4px;
         font-family: Arial, Helvetica, sans-serif;
@@ -725,7 +761,7 @@ span{
        
     }
 }
-@media(min-width:670px){
+@media(min-width:669px){
 
  
     header{
@@ -874,9 +910,8 @@ span{
             text-align: center;    
         }
         .ofertas-porta{
-            background-color: #9eb7cfa2;
-            height: 3rem;
-            width: 70%;
+           
+            width: 75%;
             margin: auto;
             border-radius: 4px;
             font-family: Arial, Helvetica, sans-serif;
@@ -988,7 +1023,7 @@ span{
         }
 }
 
-@media(min-width:770px){
+@media (min-width:770px){
     header{
         background-color: black;
          height: 40vh;
@@ -1017,16 +1052,8 @@ span{
         font-size: 1rem;
         text-align: center;
          
-        
-      
      }
-     nav ul li {
-         
-     }
-     nav ul li a{
-         
-     }
-     
+ 
      nav .icono-menu{
         display: none;
          height:5vh;
@@ -1137,7 +1164,7 @@ span{
 
      }
      .ofertas-porta{
-         background-color: #9eb7cfa2;
+        
          width: 60%;
          margin: auto;
          border-radius: 2px;
@@ -1165,9 +1192,7 @@ span{
          text-align: center;
          text-transform: uppercase;
          color: #fff;
-     
-         background-color: #374757;
-     
+
          padding: 0.8rem;
          border-bottom: solid 3px rgb(214, 200, 200);
          
@@ -1247,6 +1272,24 @@ span{
          margin-bottom: 1rem;
      }
 }
+@media (min-width:820px){
+  
+    span{
+        font-size: 1rem;
+    }
+    
+    }
+
+
+@media (max-width:1050px){
+    
+    .ofertas-porta{
+        font-size: 1.1rem;
+        padding-top: 1rem;
+    }
+
+    }
+   
 
 
 
@@ -1345,6 +1388,12 @@ span{
     padding-top: 4rem;
     padding-left: 6rem;
    
+
+}
+.boxContenido__video:hover{
+    transform:scale(1.2);
+    transition-duration: 500ms;
+    transition-delay: 1s;
 
 }
 
@@ -1455,6 +1504,13 @@ span{
     margin-left: 18px;
        
 }
+#MenuDeOpciones ul li:hover{
+    background: #374757;
+   transform:scale(1.1);
+   transition-duration: 500ms;
+   transition-delay: 0.3s;
+}
+
 
 #MenuDeOpciones ul li a {
     
@@ -1469,7 +1525,7 @@ span{
 }
 #MenuDeOpciones li a:hover {
     color: rgb(4, 32, 56);
-
+  
 }
 .submenu li{
     width:20vw;
@@ -1533,6 +1589,12 @@ span{
     width: 40%;
        
 }
+.HazloTu-caja-img:hover{
+    transform:scale(1.2) translate(0,100px);
+    transition-duration: 500ms;
+    transition-delay: 0.5s;
+    
+}
 .img-impresion{
   height: 70%;
   width: 100%;
@@ -1564,6 +1626,13 @@ span{
     width: 40%;
 
 }
+.box-imagen-modelo:hover{
+
+ transform:scale(1.2) translate(0,100px);
+    transition-duration: 500ms;
+    transition-delay: 0.5s;
+
+}
 .img-modelo{
     height: 70%;
     width: 40vw;
@@ -1583,6 +1652,12 @@ span{
     border-radius: 5px;
 
 
+}
+.titulo-h2:hover{
+    transform: scale(1.2);
+    transition-duration: 400ms;
+    transition-delay: 0.4s;
+    background: rgb(108, 240, 96);
 }
 
 .p-titulo{
@@ -1638,6 +1713,12 @@ span{
 .caja-img-clinica{
     height:100vh;
     width: 40%;
+}
+.caja-img-clinica:hover{
+    transform : scale(1.2);
+    transition-duration: 500ms;
+    transition-delay: 0.8s;
+
 }
 
 .img-clinica{
@@ -1700,6 +1781,11 @@ span{
     margin-top: 3rem;
 
 }
+.caja-img-grupo:hover{
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    transition-delay:(0.8s);
+}
 
 .img-grupo{
     height: 100%;
@@ -1751,6 +1837,7 @@ span{
     justify-content:space-between;
 }
 
+
 .box-1{
     background-color: aqua;
     border:solid 2px black;
@@ -1759,6 +1846,11 @@ span{
 
     
 }
+.box-1:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    transition-delay: 0.3s;
+}
 
 .box-2{
     background-color: aqua;
@@ -1766,11 +1858,21 @@ span{
     height: 40vh;
     width: 30vh; 
 }
+.box-2:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    transition-delay: 0.3s;
+}
 .box-3{
     background-color: aqua;
     border:solid 2px black;
     height: 40vh;
     width: 30vh; 
+}
+.box-3:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    transition-delay: 0.3s;
 }
 
 .box-4{
@@ -1779,17 +1881,32 @@ span{
     height: 40vh;
     width: 30vh; 
 }
+.box-4:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    transition-delay: 0.3s;
+}
 .box-5{
     background-color: aqua;
     border:solid 2px black;
     height: 40vh;
     width: 30vh; 
 }
+.box-5:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    transition-delay: 0.3s;
+}
 .box-6{
     background-color: aqua;
     border:solid 2px black;
     height: 40vh;
     width: 30vh; 
+}
+.box-6:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    transition-delay: 0.3s;
 }
 
 /*SECCION CONTACTO*/
